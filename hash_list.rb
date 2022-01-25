@@ -14,3 +14,8 @@ list_of_people = [
   { :name => "Carl", :age => 9 },
 ]
 
+list_of_people.each do |person|
+  if person.fetch(:age) >= 16
+    p person.fetch(:name)
+  end
+end
